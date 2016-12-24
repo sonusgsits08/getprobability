@@ -13,4 +13,15 @@ public class GenerateProbability {
 			 return Boolean.FALSE;
 		 }
 	}
+	
+	Boolean getTrue_ThreeFourthTime(){
+		 Random rand = new Random();
+		 int number = rand.nextInt(3)+1;
+		 if(number ==1 ){
+			 return getTrueFalse_HalfTime();
+		 }
+		 else{
+			 return Boolean.TRUE;
+		 }
+	}
 }
